@@ -2,15 +2,15 @@ package com.Utils;
 
 import java.util.Arrays;
 
-public class ArrayUtils {
-    public static void reverseArrayCopy(int[] arr){
+public class ArrayUtils {  
+    public static void reverseArrayCopy(int[] arr){  // функция без возврата
         int[] rev = new int[arr.length];
         for (int i = 0; i < arr.length; i++){
             rev[arr.length - i - 1] = arr[i];
         }
         System.out.println(Arrays.toString(rev));
     }
-    public static int[] reverseArray(int[] arr){
+    public static int[] reverseArray(int[] arr){  //Функция с возвратом int[]
         int[] rev = new int[5];
         System.arraycopy(arr, 0, rev, 0, arr.length);
         for (int i = 0; i < arr.length; i++){
