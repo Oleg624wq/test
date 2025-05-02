@@ -1,6 +1,6 @@
 package classes.shape;
 
-public class Circle {
+public class Circle implements Shape {
     private final double radius;
 
     public Circle(double radius) {
@@ -11,7 +11,7 @@ public class Circle {
     }
     @Override
     public double calculateArea() {
-        return Math.PI * radius * radius
+        return Math.PI * radius * radius;
     }
     @Override
     public double calculatePerimeter() {
@@ -19,6 +19,6 @@ public class Circle {
     }
     @Override
     public String toString() {
-        return String.format("Круг [радиус=%.2f]", radius);
+        return String.format("Круг [R=%.2f]", radius);
     }
 }
